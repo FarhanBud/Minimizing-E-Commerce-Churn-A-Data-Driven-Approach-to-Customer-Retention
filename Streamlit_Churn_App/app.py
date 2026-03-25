@@ -8,7 +8,7 @@ st.set_page_config(page_title="Prediksi Churn E-Commerce", page_icon="🎯", lay
 # 2. Memuat Model
 @st.cache_resource
 def load_model():
-    return joblib.dump('churn_prediction_model.pkl') # Pastikan file ini satu folder
+    return joblib.load('churn_prediction_model.pkl') 
 
 model = load_model()
 
