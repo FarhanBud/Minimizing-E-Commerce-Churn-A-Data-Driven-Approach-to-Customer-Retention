@@ -8,9 +8,12 @@ st.set_page_config(page_title="Prediksi Churn E-Commerce", page_icon="🎯", lay
 # 2. Memuat Model
 @st.cache_resource
 def load_model():
-    return joblib.load('churn_prediction_model.pkl') 
+    # Melacak direktori absolut tempat app.py berada
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    # Menggabungkan direktori tersebut dengan nama file model
+    model_path = os.path.join(current_dir, 'churn_prediction_model.pkl')
 
-model = load_model()
+    return joblib.load(model_path)
 
 # 3. Judul dan Deskripsi
 st.title("🎯 Sistem Prediksi Risiko Churn Pelanggan")
