@@ -1,5 +1,7 @@
 # E-Commerce Customer Churn Prediction: Data-Driven Retention Strategy
 
+by Muhamad Farhan Budiana JCDSBSDAM29
+
 ## 📌 Executive Summary
 
 **Minimizing E-Commerce Churn: A Data-Driven Approach to Customer Retention**
@@ -429,6 +431,7 @@ This project demonstrates the power of predictive analytics in solving real busi
 ## 📄 License
 
 This project is part of Purwadhika Data Science Capstone (Remedial) - 2026.
+Muhamad Farhan Budiana JCDSBSDAM29
 
 ---
 
@@ -442,4 +445,3 @@ For business implementation, contact the CRM/Marketing department with specific 
 
 ---
 
-**Happy Analysis! 🚀**
