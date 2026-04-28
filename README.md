@@ -1,7 +1,5 @@
 # E-Commerce Customer Churn Prediction: Data-Driven Retention Strategy
 
-by Muhamad Farhan Budiana JCDSBSDAM29
-
 ## 📌 Executive Summary
 
 **Minimizing E-Commerce Churn: A Data-Driven Approach to Customer Retention**
@@ -15,6 +13,9 @@ This project develops a predictive machine learning model to identify customers 
 ## 🎯 Business Problem
 
 ### The Crisis
+
+<img width="981" height="695" alt="image" src="https://github.com/user-attachments/assets/d23c0124-3239-4c6f-bf8f-57b948d87d57" />
+
 - **Churn Rate:** 16.6% of active customers are leaving the platform monthly
 - **Annual Revenue Loss:** ₹2-3 Billion annually per customer segment
 - **Inefficient Marketing:** Promotions distributed broadly without targeting at-risk customers
@@ -44,7 +45,6 @@ This project develops a predictive machine learning model to identify customers 
 ### Success Metrics
 - **Recall ≥ 85%:** Detect 85%+ of customers who will actually churn
 - **Precision ≥ 50%:** Minimize false alarms while maintaining high detection rate
-- **ROI Impact:** Enable 30-50% improvement in loyalty campaign effectiveness
 - **Cost Savings:** Reduce marketing waste by ₹150-200M annually
 
 ---
@@ -169,8 +169,6 @@ This project develops a predictive machine learning model to identify customers 
 |--------|---------|---|
 | **Recall** | TP/(TP+FN) | Catches all TRUE churners; minimize missed customers |
 | **Precision** | TP/(TP+FP) | Of predicted churn, how many are correct; avoid false alarms |
-| **F1-Score** | 2×(Precision×Recall)/(Precision+Recall) | Balanced measure of both |
-| **ROC-AUC** | Area under ROC curve | Performance across thresholds |
 | **Confusion Matrix** | TP, TN, FP, FN | Business cost analysis |
 
 **Business Cost of Prediction Errors:**
@@ -188,7 +186,6 @@ This project develops a predictive machine learning model to identify customers 
 ### Target Performance Levels
 - **Recall:** ≥ 85% (detect 714+ of 841 actual churners)
 - **Precision:** ≥ 50-60% (manage false alarm rate)
-- **ROC-AUC:** ≥ 0.80 (good discrimination across thresholds)
 
 ### Financial Impact (at Recall 85%)
 
@@ -209,16 +206,12 @@ This project develops a predictive machine learning model to identify customers 
 Remedial Final Project 26/
 ├── README.md                              # This file
 ├── Ecommerce_Analysis-Main.ipynb           # Main analysis notebook
-├── ECommerceDataset.xlsx                   # Raw dataset
-├── ecommerce_churn_cleaned.csv             # Cleaned dataset
-├── models/                                 # Trained model artifacts
+├── model/                                 # Trained model artifacts
 │   ├── churn_prediction_model.pkl
-│   ├── scaler.pkl
-│   └── encoder.pkl
-└── data/
+|   ├── requirements.txt
+└── Dataset/
     ├── ECommerceDataset.xlsx               # Source data
-    ├── ecommerce_churn_cleaned.csv         # Post-cleaning data
-    └── feature_engineered.csv              # After feature engineering
+    ├── Ecommerce_Churn_Predictive_Tableau         # Post-cleaning data
 ```
 
 ---
@@ -372,7 +365,6 @@ jupyter notebook
 | **Retention Rate** | 83.4% | 85-86% | +1.6-2.6 percentage points |
 | **Customers Saved/Month** | 0 | 50-65 | ~600-780/year |
 | **Annual Retention Value** | ₹0 | ₹1.4B+ | Direct revenue protection |
-| **Marketing ROI** | Current | +40-50% | Better spend efficiency |
 | **CAC Savings** | ₹0 | ₹3.5B+ | Avoid replacement cost |
 
 ---
@@ -401,7 +393,7 @@ jupyter notebook
 - **Week 3-4:** Staff training and campaign setup
 - **Week 5-8:** Pilot campaign on small customer segment
 - **Week 9-12:** Scale to full customer base with monitoring
-- **Ongoing:** Monitor model performance and retrain monthly
+- **12-Deadline:** Monitor model performance and retrain monthly
 
 ---
 
@@ -418,6 +410,22 @@ jupyter notebook
 
 ---
 
+## Tableau Interactive Dashboard 
+
+- Link Dashboard: https://public.tableau.com/app/profile/muhamad.farhan.budiana/viz/ECommerce-Dashboard-MuhamadFarhanBudiana/Dashboard1?publish=yes
+
+<img width="1336" height="749" alt="Screenshot 2026-04-08 172509" src="https://github.com/user-attachments/assets/9bb31f6d-fe6f-4e88-8af6-fe5b0310fdda" />
+
+---
+
+## Streamlit Website: Churn Prediction
+
+- Link Website: https://farhanbud-ecommerce-churn-analysis-website.streamlit.app/
+
+<img width="1897" height="901" alt="Screenshot 2026-04-08 173030" src="https://github.com/user-attachments/assets/71c0199c-5f26-4ecf-8615-36ffcd480390" />
+<img width="1767" height="770" alt="Screenshot 2026-04-08 173055" src="https://github.com/user-attachments/assets/03383853-9271-4d96-b0f8-02136406892b" />
+
+
 ## 📝 Author Notes
 
 This project demonstrates the power of predictive analytics in solving real business problems. Rather than a purely technical exercise, the focus is on:
@@ -431,7 +439,9 @@ This project demonstrates the power of predictive analytics in solving real busi
 ## 📄 License
 
 This project is part of Purwadhika Data Science Capstone (Remedial) - 2026.
-Muhamad Farhan Budiana JCDSBSDAM29
+Final Project by Muhamad Farhan Budiana JCDSBSDAM29-002
+
+All Rights Reserved
 
 ---
 
@@ -441,7 +451,6 @@ For technical questions, refer to the Jupyter notebook with detailed explanation
 For business implementation, contact the CRM/Marketing department with specific segment recommendations.
 
 **Last Updated:** April 2026
-**Status:** Analysis Complete | Model Development In Progress
+**Status:** Analysis Complete 
 
 ---
-
